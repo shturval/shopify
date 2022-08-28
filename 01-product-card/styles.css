@@ -1,7 +1,7 @@
 @import url('../normalize.css');
 
 /* -------------- */
-/* GENERAL */
+/* BASE */
 body {
   font: 400 16px/24px Arial, Helvetica, sans-serif;
   color: #2F2F2F;
@@ -9,7 +9,7 @@ body {
 
 .wrap {
   max-width: 1200px;
-  padding: 40px 10px 60px;
+  padding: 40px 10px 0;
   margin: 0 auto;
 }
 
@@ -85,6 +85,7 @@ a:hover {
   border: solid 2px #4E4E4E;
 }
 
+
 /* -------------- */
 /* SECTION PRODUCTS */
 .products-week {
@@ -109,6 +110,7 @@ a:hover {
   background-color: #fff;
   width: 380px;
   min-height: 482px;
+  margin-bottom: 60px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
@@ -140,4 +142,50 @@ a:hover {
 }
 .products-card__txt-desc {
   min-height: 96px;
+}
+
+@media (max-width: 816px) {
+  .products__title {
+    font-size: 38px;
+    line-height: 72px;
+  }
+}
+
+@media (max-width: 417px) {
+  .products__title {
+    font-size: 34px;
+    line-height: 72px;
+  }
+  .products-card__head {
+    height: 148.75px;
+  }
+  .products-card {
+    min-height: 417px;
+  }
+}
+@media (max-width: 398px) {
+  .products__title {
+    font-size: 30px;
+    line-height: 72px;
+  }
+}
+@media (max-width: 359px) {
+  .products__title {
+    font-size: 26px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 344px) {
+  .products-card__txt-name {
+    font-size: 20px;
+  }
+  .products-card__txt-desc {
+    font-size: 14px;
+  }
+  .sticker--new,
+  .sticker--final {
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+}
 }
