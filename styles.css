@@ -1,18 +1,52 @@
+@import url('../normalize.css');
+
+/* -------------- */
+/* GENERAL */
+body, html {
+  height: 100%;
+  background-color: #03557D;
+}
 body {
-  background-color: #F6F6F6;
+  font: normal 16px/1.5 Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
 }
 
-.wrap {}
+a {
+  text-decoration: none;
+  border-bottom: dotted 1px;
+  color: #ffdbae;
+  transition-duration: .15s;
+}
+a:hover {
+  color: #fff;
+}
 
-.section {}
+.wrap {
+  max-width: 800px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
-.products-week {}
-.products__title {}
-.products__items {}
-.products-item {}
-.products-item__img {}
-.sticker-new {}
-.sticker-final {}
-.products-item__name {}
-.products-item__desc {}
-.btn-cart {}
+/* -------------- */
+/* HEADER */
+.head {
+  height: 80px;
+  text-align: center;
+}
+.head__title {
+  margin-top: 40px;
+}
+
+/* -------------- */
+/* CONTENT */
+.content_items {
+  padding: 10px 0;
+  text-shadow:1px 1px 2px rgba(0, 0, 0, 1.0);
+}
+.content_item-link {
+  font-weight: bold;
+}
+.content_item-desc {
+  font-size: 11px;
+  margin-bottom: 10px;
+}

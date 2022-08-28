@@ -1,0 +1,143 @@
+@import url('../normalize.css');
+
+/* -------------- */
+/* GENERAL */
+body {
+  font: 400 16px/24px Arial, Helvetica, sans-serif;
+  color: #2F2F2F;
+}
+
+.wrap {
+  max-width: 1200px;
+  padding: 40px 10px 60px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  transition-duration: .15s;
+}
+a:hover {
+  cursor: pointer;
+}
+
+/* -------------- */
+/* UI */
+.sticker {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.sticker--new,
+.sticker--final {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 16px;
+  padding-right: 16px;
+  float: left;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  letter-spacing: 0.18px;
+}
+.sticker--new {
+  background-color: #FDCFF3;
+}
+.sticker--final {
+  background: #FFCF56;
+}
+.sticker > span:not(:first-child) {
+  margin-left: 16px;
+}
+
+.btn__cart,
+.btn__cart--expire {
+  height: 48px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 45px;
+  text-align: center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+}
+.btn__cart {
+  color: #42940F;
+  border: solid 2px #42940F;
+}
+.btn__cart:hover {
+  background-color: #42940F;
+  color: #fff;
+}
+.btn__cart:active {
+  background-color: #4E4E4E;
+  color: #fff;
+  border: solid 2px #4E4E4E;
+}
+.btn__cart--expire {
+  background-color: #4E4E4E;
+  color: #fff;
+  border: solid 2px #4E4E4E;
+}
+
+/* -------------- */
+/* SECTION PRODUCTS */
+.products-week {
+  background-color: #F6F6F6;
+}
+
+.products__title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 72px;
+  color: #000;
+  margin-bottom: 40px;
+}
+.products__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.products-card {
+  background-color: #fff;
+  width: 380px;
+  min-height: 482px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+.products-card__head {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 213.75px;
+}
+.products-card__head-img {
+  width: 100%;
+}
+
+.products-card__txt {
+  padding-top: 30px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  height: 268.25px;
+  position: relative;
+}
+.products-card__txt-name {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 23px;
+}
+.products-card__txt-desc {
+  min-height: 96px;
+}
