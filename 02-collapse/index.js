@@ -18,7 +18,15 @@ btn.setAttribute('style',`
   box-shadow: 0px 3px 6px -1px rgba(0, 0, 0, 0.2);
   font: 700 14px/20px sans-serif;
   padding: 10px 15px;
-  cursor: pointer;`);
+  cursor: pointer;
+  width: 200px;`);
+
+btn.onmouseover = function(e) {
+  btn.style.backgroundColor = '#f5f5f5';
+};
+btn.onmouseout = function(e) {
+  btn.style.backgroundColor = '#eee';
+};
 
 const btnV = document.querySelector('.collapsible__action--visible');
 btnV.setAttribute('style',`
@@ -48,10 +56,10 @@ const anim = document
   .querySelector('.collapsible__content')
   .animate(
     {
-      height: ["0", "200px"]
+      opacity: ["0", "1"]
     },
     {
-      duration: 500, fill: "both", easing: "ease-out"
+      duration: 300, fill: "both", easing: "ease-out"
     }
   );
 
@@ -70,5 +78,7 @@ document.querySelector("button").addEventListener("click", () => {
     btnH.setAttribute('style',`color: #0ec268;`);
     const btnV = document.querySelector('.collapsible__action--visible');
     btnV.setAttribute('style',`display: none`);
+    anim.reverse();
+    anim.pause();
   }
 });
