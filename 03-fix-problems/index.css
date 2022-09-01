@@ -30,3 +30,13 @@ h1.article__heading {
     font-style: italic;
     margin-top: 8px;
 }
+
+/* -------------- */
+/* ниже параметры не являются обязательными, т.к. это не было в условиях задания */
+/* MEDIA */
+@media (max-width: 730px) {
+    .figure__image { width: 100%; }
+}
+@media (max-width: 535px) {
+    .figure__caption { font-size: 12px; }
+}
