@@ -1,0 +1,32 @@
+/* -------------- */
+/* BASE */
+body {
+    font-family: sans-serif;
+    background: #fff8dc;
+    margin: 0.1px;
+}
+h1.article__heading {
+    margin: 0 0 1.5rem 0;
+    color: #d87093;
+}
+
+/* -------------- */
+/* MAIN */
+.article {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 24px;
+}
+.article__lead {
+    font: italic 700 16px serif;
+    text-transform: uppercase;
+}
+.article__figure {
+    margin: 0 auto;
+}
+
+.figure__caption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 8px;
+}
